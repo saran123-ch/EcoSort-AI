@@ -1,0 +1,65 @@
+# ============================================
+# EcoSort AI — .gitignore
+# ============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dataset (large — users should download separately)
+data/
+*.zip
+
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+*.key
+*.pem
+.env
+
+# Logs
+*.log
+
+# Temporary
+tmp/
+temp/
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Training and test outputs
+wandb/
+*.log
+# Keep only the model needed by the app
+artifacts/*.pth
+!artifacts/ecosort_model_v2_enhanced.pth
+
+# Exclude unnecessary training outputs
+runs/
+data/
+yolov8n.pt
+_pycache_/
+.pytest_cache/

@@ -1,0 +1,171 @@
+{
+  "total_tested": 280,
+  "classification_report": {
+    "Cardboard": {
+      "precision": 0.3488372093023256,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.38461538461538464,
+      "support": 35.0
+    },
+    "Glass": {
+      "precision": 0.7647058823529411,
+      "recall": 0.37142857142857144,
+      "f1-score": 0.5,
+      "support": 35.0
+    },
+    "Metal": {
+      "precision": 0.5,
+      "recall": 0.4,
+      "f1-score": 0.4444444444444444,
+      "support": 35.0
+    },
+    "Paper": {
+      "precision": 0.22950819672131148,
+      "recall": 0.4,
+      "f1-score": 0.2916666666666667,
+      "support": 35.0
+    },
+    "Plastic": {
+      "precision": 0.7368421052631579,
+      "recall": 0.2,
+      "f1-score": 0.3146067415730337,
+      "support": 70.0
+    },
+    "micro avg": {
+      "precision": 0.4166666666666667,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.37037037037037035,
+      "support": 210.0
+    },
+    "macro avg": {
+      "precision": 0.5159786787279472,
+      "recall": 0.36,
+      "f1-score": 0.3870666474599059,
+      "support": 210.0
+    },
+    "weighted avg": {
+      "precision": 0.5527892498171489,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.3749899964787605,
+      "support": 210.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      3,
+      10,
+      0
+    ],
+    [
+      0,
+      13,
+      5,
+      2,
+      4
+    ],
+    [
+      3,
+      0,
+      14,
+      12,
+      1
+    ],
+    [
+      20,
+      0,
+      0,
+      14,
+      0
+    ],
+    [
+      5,
+      4,
+      6,
+      23,
+      14
+    ]
+  ],
+  "confusion_classes": [
+    "Cardboard",
+    "Glass",
+    "Metal",
+    "Paper",
+    "Plastic"
+  ],
+  "ood_total": 70,
+  "ood_screened_safe": 56,
+  "failure_cases": [
+    {
+      "file": "glass 1155.jpg",
+      "suite": "Glass",
+      "true": "Glass",
+      "pred": "Textile Trash",
+      "conf": "91.6%"
+    },
+    {
+      "file": "glass 1238.jpg",
+      "suite": "Glass",
+      "true": "Glass",
+      "pred": "Plastic",
+      "conf": "97.1%"
+    },
+    {
+      "file": "glass 125.jpg",
+      "suite": "Glass",
+      "true": "Glass",
+      "pred": "Paper",
+      "conf": "85.8%"
+    },
+    {
+      "file": "metal 1190.jpg",
+      "suite": "Metal",
+      "true": "Metal",
+      "pred": "Cardboard",
+      "conf": "89.7%"
+    },
+    {
+      "file": "metal 1205.jpg",
+      "suite": "Metal",
+      "true": "Metal",
+      "pred": "Paper",
+      "conf": "96.1%"
+    },
+    {
+      "file": "paper 1055.jpg",
+      "suite": "Paper",
+      "true": "Paper",
+      "pred": "Cardboard",
+      "conf": "98.8%"
+    },
+    {
+      "file": "paper 1060.jpg",
+      "suite": "Paper",
+      "true": "Paper",
+      "pred": "Cardboard",
+      "conf": "92.5%"
+    },
+    {
+      "file": "paper 1063.jpg",
+      "suite": "Paper",
+      "true": "Paper",
+      "pred": "Cardboard",
+      "conf": "89.2%"
+    },
+    {
+      "file": "paper 1074.jpg",
+      "suite": "Paper",
+      "true": "Paper",
+      "pred": "Cardboard",
+      "conf": "96.8%"
+    },
+    {
+      "file": "paper 1108.jpg",
+      "suite": "Paper",
+      "true": "Paper",
+      "pred": "Cardboard",
+      "conf": "85.2%"
+    }
+  ]
+}

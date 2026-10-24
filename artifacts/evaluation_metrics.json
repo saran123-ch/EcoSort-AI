@@ -1,0 +1,83 @@
+{
+  "overall_accuracy": 87.62,
+  "classification_report": {
+    "Cardboard": {
+      "precision": 0.7926829268292683,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.8552631578947368,
+      "support": 70.0
+    },
+    "Food Organics": {
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1-score": 0.9473684210526315,
+      "support": 63.0
+    },
+    "Glass": {
+      "precision": 0.90625,
+      "recall": 0.9206349206349206,
+      "f1-score": 0.9133858267716536,
+      "support": 63.0
+    },
+    "Metal": {
+      "precision": 0.8222222222222222,
+      "recall": 0.9327731092436975,
+      "f1-score": 0.8740157480314961,
+      "support": 119.0
+    },
+    "Miscellaneous Trash": {
+      "precision": 0.859375,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.7913669064748201,
+      "support": 75.0
+    },
+    "Paper": {
+      "precision": 0.8933333333333333,
+      "recall": 0.8933333333333333,
+      "f1-score": 0.8933333333333333,
+      "support": 75.0
+    },
+    "Plastic": {
+      "precision": 0.9122807017543859,
+      "recall": 0.7482014388489209,
+      "f1-score": 0.8221343873517787,
+      "support": 139.0
+    },
+    "Textile Trash": {
+      "precision": 0.8979591836734694,
+      "recall": 0.8979591836734694,
+      "f1-score": 0.8979591836734694,
+      "support": 49.0
+    },
+    "Vegetation": {
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546,
+      "f1-score": 0.9545454545454546,
+      "support": 66.0
+    },
+    "accuracy": 0.8762169680111266,
+    "macro avg": {
+      "precision": 0.882072091373126,
+      "recall": 0.889928022464951,
+      "f1-score": 0.8832636021254862,
+      "support": 719.0
+    },
+    "weighted avg": {
+      "precision": 0.8795356632355393,
+      "recall": 0.8762169680111266,
+      "f1-score": 0.8744548129468961,
+      "support": 719.0
+    }
+  },
+  "confidence_threshold_analysis": {
+    "threshold": 0.7,
+    "total_predictions": 719,
+    "confident_predictions": 520,
+    "confident_percentage": 72.3,
+    "confident_accuracy": 95.38,
+    "uncertain_predictions": 199,
+    "uncertain_percentage": 27.7,
+    "uncertain_accuracy": 67.34
+  },
+  "test_set_size": 719
+}
